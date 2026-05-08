@@ -1,0 +1,14 @@
+{
+  "name": "byteme",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev --workspace=@byteme/server",
+    "dev:web": "npm run dev --workspace=@byteme/web",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  }
+}
